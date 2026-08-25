@@ -2,19 +2,20 @@
 
 Machine-learning project that classifies Google Play Store user reviews as **Positive, Neutral, or Negative**.
 
-## Dataset
+## Dataset Reference
 
-Use the Kaggle dataset/notebook provided for this assignment:
+The project is based on the Kaggle Play Store User Reviews dataset/reference:
 
 https://www.kaggle.com/code/mmmarchetti/play-store-sentiment-analysis-of-user-reviews
 
-Download the user-review CSV and place it in:
+**The Kaggle dataset is not included in this GitHub repository.**
 
-```text
-data/User Reviews.csv
-```
+The program has two modes:
 
-The dataset is **not redistributed** in this repository. The program automatically detects common review/sentiment column names.
+1. If you place a compatible Play Store CSV inside `data/`, it automatically uses that real dataset.
+2. If no CSV is present, it automatically runs with a small built-in demonstration dataset, so the GitHub project can be executed without downloading or uploading the Kaggle dataset.
+
+For academic results based on the actual Kaggle data, place the CSV in `data/` before running.
 
 ## Project structure
 
@@ -47,9 +48,11 @@ cd Task4_PlayStore_Sentiment_GitHub
 python -m pip install -r requirements.txt
 ```
 
-### 3. Add the dataset
+### 3. Dataset (optional)
 
-Download the CSV from the Kaggle source above and put it inside `data/`.
+No dataset is required just to test the repository. If no CSV is found, the program uses its built-in demonstration dataset.
+
+To reproduce results with the Kaggle Play Store dataset, download its CSV and place it inside `data/`.
 
 ### 4. Run the Python project
 
